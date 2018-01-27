@@ -1,3 +1,5 @@
 .idea/
-ConuHack3.iml
 local.properties
+.gradle/
+build/
+*.iml
