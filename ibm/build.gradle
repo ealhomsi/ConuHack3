@@ -22,3 +22,10 @@ sourceSets {
         }
     }
 }
+
+run {
+    doFirst {
+        standardInput = System.in
+    }
+    systemProperty "image", System.getProperty("image")
+}
