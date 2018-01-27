@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'application'
+sourceCompatibility = 1.8
+version = '1.0'
+mainClassName = "ibm.IBM"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.ibm.watson.developer_cloud:java-sdk:4.0.0'
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src/java'
+        }
+        resources {
+            srcDir 'src/resources'
+        }
+    }
+}
