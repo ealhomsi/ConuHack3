@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "274596072894",
+    "firebase_url": "https://conuhacksiii-a5c79.firebaseio.com",
+    "project_id": "conuhacksiii-a5c79",
+    "storage_bucket": "conuhacksiii-a5c79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:274596072894:android:3790d401bf54a5c3",
+        "android_client_info": {
+          "package_name": "com.nuance.speechkitsample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "274596072894-8ncmri1qesdna9gbq6c2273n695df67p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nuance.speechkitsample",
+            "certificate_hash": "a2315811f7a83fa9b6fd36dfa277781d7ca42a31"
+          }
+        },
+        {
+          "client_id": "274596072894-9k2ppdsmttht8ti555v0hi5behuvti57.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuciIK66bVSnPPOBp9RzoBvSQCfngMbLY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "274596072894-9k2ppdsmttht8ti555v0hi5behuvti57.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

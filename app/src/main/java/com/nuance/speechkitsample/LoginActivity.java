@@ -3,6 +3,8 @@ package com.nuance.speechkitsample;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.annotation.NonNull;
 
@@ -28,6 +30,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -173,18 +176,31 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         }
 
         if (cancel) {
+            createToast("fail");
+
             // There was an error; don't attempt login and focus the first
             // form field with an error.
             focusView.requestFocus();
         } else {
+            createToast("success");
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
+            Intent next = new Intent(LoginActivity.this, Categories.class);
+            startActivity(next);
+            finish();
         }
     }
 
+    private void createToast(String text) {
+        Context context = getApplicationContext();
+        int duration = Toast.LENGTH_SHORT;
+
+        Toast toast = Toast.makeText(context, text, duration);
+        toast.show();
+    }
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
         return email.contains("@");

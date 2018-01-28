@@ -83,5 +83,6 @@
         completions."
     </string>
     <string name="registerHello">Hello Panda</string>
+    <string name="title_activity_categories">Categories</string>
 
 </resources>
