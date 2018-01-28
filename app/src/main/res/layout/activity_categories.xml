@@ -6,4 +6,51 @@
     android:layout_height="match_parent"
     tools:context="com.nuance.speechkitsample.Categories">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/choose_A_Category"
+                android:textAppearance="@android:style/TextAppearance.Holo.Widget.PopupMenu.Large"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <ImageButton
+                android:layout_width="142dp"
+                android:layout_height="102dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/camer"
+                android:onClick="CreateCameraIntent"/>
+
+            <ImageButton
+                android:layout_width="142dp"
+                android:layout_height="82dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/animals" />
+
+            <ImageButton
+                android:layout_width="144dp"
+                android:layout_height="96dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/places" />
+
+            <ImageButton
+                android:layout_width="144dp"
+                android:layout_height="83dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/objects" />
+
+
+        </LinearLayout>
+    </ScrollView>
 </android.support.constraint.ConstraintLayout>

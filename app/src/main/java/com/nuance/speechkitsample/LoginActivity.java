@@ -6,6 +6,7 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 
 import android.app.Activity;
@@ -188,9 +189,8 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
             showProgress(true);
             mAuthTask = new UserLoginTask(email, password);
             mAuthTask.execute((Void) null);
-            Intent next = new Intent(LoginActivity.this, Categories.class);
-            startActivity(next);
-            finish();
+
+            startActivity( new Intent(LoginActivity.this, Categories.class));
         }
     }
 
@@ -201,6 +201,7 @@ public class LoginActivity extends Activity implements LoaderCallbacks<Cursor> {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
+
     private boolean isEmailValid(String email) {
         //TODO: Replace this with your own logic
         return email.contains("@");

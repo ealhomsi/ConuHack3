@@ -84,5 +84,7 @@
     </string>
     <string name="registerHello">Hello Panda</string>
     <string name="title_activity_categories">Categories</string>
+    <string name="choose_A_Category">Please choose a category</string>
+    <string name="title_activity_full_image">FullImage</string>
 
 </resources>
